@@ -1,0 +1,18 @@
+
+{
+  "name": "幻梦壁纸 - 樱色次元",
+  "short_name": "幻梦图库",
+  "description": "二次元风格艺术壁纸展示平台",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff1f2",
+  "theme_color": "#fb7185",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/3132/3132644.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

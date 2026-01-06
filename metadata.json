@@ -1,0 +1,7 @@
+{
+  "name": "幻梦壁纸 - 极光二次元",
+  "description": "一个充满二次元色彩的艺术壁纸展示平台，支持AI创意生成与本地上传，拥有华丽的转场动画与沉浸式交互体验。",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
