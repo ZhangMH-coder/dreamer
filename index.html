@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>幻梦壁纸 - 樱色次元</title>
-    <link rel="manifest" href="manifest.json">
+    <link rel="manifest" href="./manifest.json">
     <meta name="theme-color" content="#fb7185">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -15,7 +15,7 @@
     <style>
         body {
             font-family: 'Noto Sans SC', sans-serif;
-            background-color: #fff1f2; /* 基础底色：极浅粉 */
+            background-color: #fff1f2;
             color: #1e293b;
             overflow-x: hidden;
             -webkit-tap-highlight-color: transparent;
@@ -119,5 +119,7 @@
 </head>
 <body>
     <div id="root"></div>
+    <!-- 关键修正：显式引入 index.tsx 入口 -->
+    <script type="module" src="./index.tsx"></script>
 </body>
 </html>

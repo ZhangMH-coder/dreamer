@@ -1,181 +1,20 @@
-# 幻梦壁纸---极光二次元
+<div align="center">
+<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+</div>
 
-一个精美的二次元壁纸浏览和管理应用，采用现代化的React技术栈构建，具有优雅的视觉效果和流畅的用户体验。
+# Run and deploy your AI Studio app
 
-## 项目简介
+This contains everything you need to run your app locally.
 
-幻梦壁纸---极光二次元是一款专为二次元爱好者设计的壁纸管理应用，提供了丰富的壁纸浏览、收藏、搜索和管理功能，同时融入了樱花飘落等动画效果，营造出浪漫唯美的视觉体验。
+View your app in AI Studio: https://ai.studio/apps/drive/1FEbNt5mw3Hf3-gtljBYeWubDlT5gNroU
 
-### 主要功能
+## Run Locally
 
-- 🎨 **壁纸浏览**：发现精美的二次元壁纸，支持网格布局展示
-- ⭐ **收藏管理**：将喜欢的壁纸添加到收藏夹，方便快速访问
-- 🔍 **智能搜索**：支持按标题、作者和标签搜索壁纸
-- 🏷️ **标签过滤**：通过标签快速筛选壁纸，发现更多相关内容
-- 📤 **批量上传**：支持批量上传壁纸，自定义标题、作者和标签
-- 🎭 **剧场模式**：沉浸式全屏浏览体验，享受壁纸的视觉盛宴
-- 🌸 **樱花特效**：动态樱花飘落效果，增强视觉美感
-- 📱 **响应式设计**：适配不同屏幕尺寸，在手机和桌面设备上均有良好表现
-- 💾 **本地存储**：壁纸数据持久化存储在本地，无需网络连接也能使用
-
-## 技术栈
-
-- **前端框架**：React 19.2.3
-- **开发语言**：TypeScript
-- **构建工具**：Vite 6.2.0
-- **AI服务**：Google GenAI API
-- **CSS方案**：原生CSS + 现代CSS特性
-- **状态管理**：React Hooks (useState, useEffect, useMemo)
-- **本地存储**：localStorage
-
-## 项目结构
-
-```
-├── components/         # 组件目录
-│   ├── Navbar.tsx      # 导航栏组件
-│   ├── SakuraEffect.tsx # 樱花特效组件
-│   ├── TheaterMode.tsx # 剧场模式组件
-│   ├── UploadModal.tsx # 上传模态框组件
-│   ├── WallpaperCard.tsx # 壁纸卡片组件
-│   └── WallpaperDetail.tsx # 壁纸详情组件
-├── services/           # 服务目录
-│   └── geminiService.ts # Google Gemini服务
-├── App.tsx             # 主应用组件
-├── constants.tsx       # 常量和初始数据
-├── types.ts            # 类型定义
-├── package.json        # 项目配置
-├── tsconfig.json       # TypeScript配置
-└── vite.config.ts      # Vite配置
-```
-
-## 快速开始
-
-### 环境要求
-
-- Node.js 18.0.0 或更高版本
-- npm 9.0.0 或更高版本
-
-### 安装步骤
-
-1. **克隆项目**
-   ```bash
-   git clone <repository-url>
-   cd 幻梦壁纸---极光二次元
-   ```
-
-2. **安装依赖**
-   ```bash
-   npm install
-   ```
-
-3. **配置环境变量**
-   复制 `.env.local.example` 文件为 `.env.local`，并填写必要的环境变量：
-   ```
-   # Google Gemini API Key
-   VITE_GEMINI_API_KEY=your-api-key-here
-   ```
-
-4. **启动开发服务器**
-   ```bash
-   npm run dev
-   ```
-
-5. **构建生产版本**
-   ```bash
-   npm run build
-   ```
-
-6. **预览生产构建**
-   ```bash
-   npm run preview
-   ```
-
-## 功能详解
-
-### 1. 壁纸浏览与发现
-
-应用默认展示发现页面，您可以浏览所有可用的壁纸。每张壁纸都以卡片形式展示，包含标题、作者和标签信息。
-
-### 2. 收藏管理
-
-点击壁纸上的心形图标可以将壁纸添加到收藏夹，再次点击则移除。在"我的收藏"标签页中，您可以查看所有已收藏的壁纸。
-
-### 3. 搜索与过滤
-
-- **搜索**：在顶部搜索框中输入关键词，可搜索壁纸的标题、作者和标签
-- **标签过滤**：点击导航栏中的标签，可按标签筛选壁纸
-
-### 4. 批量上传
-
-点击右下角的"+"按钮，打开上传模态框，您可以批量添加壁纸，为每张壁纸设置标题、作者和标签。
-
-### 5. 壁纸详情
-
-点击壁纸卡片进入详情页，您可以：
-- 查看壁纸大图
-- 调整壁纸旋转角度
-- 设置壁纸焦点
-- 将壁纸添加到收藏夹
-- 删除壁纸
-- 进入剧场模式
-
-### 6. 剧场模式
-
-在详情页或发现页点击"开启沉浸巡航"按钮，进入剧场模式，全屏浏览壁纸，支持键盘左右箭头切换壁纸。
-
-### 7. 樱花特效
-
-应用背景有动态的樱花飘落效果，增强视觉美感，营造浪漫氛围。
-
-## 数据结构
-
-### 壁纸数据结构
-
-```typescript
-interface Wallpaper {
-  id: string;          // 壁纸唯一标识
-  url: string;         // 壁纸图片URL
-  title: string;       // 壁纸标题
-  tags: string[];      // 标签数组
-  author: string;      // 作者
-  isFavorite?: boolean; // 是否收藏
-  rotation?: number;    // 旋转角度
-  focalPoint?: { x: number; y: number }; // 焦点坐标
-  views?: number;       // 查看次数
-}
-```
-
-## 未来规划
-
-- [ ] 支持壁纸分类管理
-- [ ] 添加壁纸评分和评论功能
-- [ ] 实现壁纸分享功能
-- [ ] 集成更多AI生成壁纸功能
-- [ ] 添加壁纸下载功能
-- [ ] 实现用户账户系统，支持云端同步
-- [ ] 开发移动应用版本
-
-## 技术亮点
-
-1. **现代化React技术**：使用React 19的最新特性，如Hooks和并发渲染
-2. **类型安全**：全面使用TypeScript，确保代码质量和可维护性
-3. **响应式设计**：适配不同屏幕尺寸，提供一致的用户体验
-4. **性能优化**：使用useMemo等React优化手段，确保应用流畅运行
-5. **视觉效果**：精心设计的UI和动画效果，营造出唯美的视觉体验
-6. **本地存储**：使用localStorage实现数据持久化，无需后端服务
-7. **AI集成**：集成Google GenAI API，可能用于生成壁纸或标签
-
-## 贡献指南
-
-欢迎对项目进行贡献！如果您有任何问题或建议， please feel free to open an issue or submit a pull request.
-
-### 开发规范
-
-- 代码风格：遵循TypeScript和React最佳实践
-- 提交信息：使用清晰、简洁的提交信息
-- 分支管理：使用feature分支开发新功能，使用bugfix分支修复bug
+**Prerequisites:**  Node.js
 
 
----
-
-> 樱花飘落的季节，与你相遇在幻梦的二次元世界 🌸
+1. Install dependencies:
+   `npm install`
+2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
+3. Run the app:
+   `npm run dev`
